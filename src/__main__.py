@@ -1,5 +1,4 @@
 import os
-import sys
 import tkinter as tk
 from tkinter import ttk
 
@@ -18,7 +17,7 @@ class PokemonApp:
         # Fixer la taille de la fenêtre
         self.master.geometry("957x683")
         self.master.resizable(False, False)
-        # self.master.iconbitmap(get_path() + 'libs/imgs/logo.ico')
+        self.master.iconbitmap(get_path() + 'libs/imgs/logo.ico')
 
         self.__lasted = None
 
@@ -211,17 +210,8 @@ class PokemonApp:
                     self.pokedex_manager.Shiny.remove(selected_pokemon.pokedex_id)
         self.show_current_pokemon()
 
-    def set_window_icon(self):
-        icon_path = os.path.join(sys._MEIPASS, 'libs/imgs/logo.ico')
-        if os.path.exists(icon_path):
-            img = Image.open(icon_path)
-            img = img.resize((32, 32), Image.ANTIALIAS)
-            img = ImageTk.PhotoImage(img)
-            self.master.tk.call('wm', 'iconphoto', self.master._w, img)
-
 
 if __name__ == "__main__":
     root = tk.Tk()
     app = PokemonApp(root)
-    app.set_window_icon()
     root.mainloop()
