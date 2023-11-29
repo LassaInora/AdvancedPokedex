@@ -3,7 +3,7 @@ Bienvenue dans le Gestionnaire Pokémon, votre outil ultime pour explorer le mon
 
 ## Instructions d'utilisation
 ### Installation
-1. Téléchargez le [fichier .zip](https://github.com/LassaInora/AdvancedPokedex/releases/download/App_Bureau/Application.bureautique.pour.Windows.zip).
+1. Téléchargez le [fichier .zip](https://github.com/LassaInora/AdvancedPokedex/raw/master/dist/Pokemon_Manager_for_Windows.zip).
 2. Décompressez le fichier dans son dossier de destination.
 3. (Optionel) Créez un raccourci afin de facilité l'accessibilité de l'exécutable.
 4. Profitez de l'application !
